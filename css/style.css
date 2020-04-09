@@ -207,6 +207,30 @@ h1, h2, h3, h4, h5, h6 {
     color: #333;
 }
 
+.btn_2 {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+
+    border: 3px solid white;
+    border-radius: 10px;
+    background-color: grey;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: background .1s linear, color .1s linear;
+}
+
+.btn_2:hover {
+    background-color: black;
+    color: white;
+}
+
+
 
 
 /* Slider */
