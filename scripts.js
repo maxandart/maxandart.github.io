@@ -1,11 +1,11 @@
 var countDiv = 10;
 var countImg = 5;
 var iActive = 0;
-var iActiveSlide = 0;
 var path = "../slider/page";
 var volImg = 10;
-var volSlider = 200;
 var num = 0;
+var w = 700;
+var h = 500;
 
 //режем картинку на квадратики создаём для каждого участка класс
 function CreateImg() {
@@ -13,9 +13,9 @@ function CreateImg() {
         for(var i = 0; i < countDiv; ++i){
             var html = "<div class = 'img" + i + "'></div>";
             var img = $(html);
-            img.css("background-position", "-" + i * 510 / countDiv + "px -" + j * 300 / countDiv + "px");
-            img.css("width", 510 / countDiv + "px");
-            img.css("height", 300 / countDiv + "px"); 
+            img.css("background-position", "-" + i * w / countDiv + "px -" + j * h / countDiv + "px");
+            img.css("width", w / countDiv + "px");
+            img.css("height", h / countDiv + "px"); 
             img.appendTo("#main");
         }
     }
